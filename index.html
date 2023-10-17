@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="form">
+      <form action="">
+        <div class="wrap">
+
+          <div class="col">
+            <label class="title" for="day" id="lbl-day">DAY</label>
+            <input type="datetime" name="day" placeholder="DD" id="day" oninput="handleInput(this)" required>
+            <small class="error" id="day-err-1">Must be a valid day</small>
+            <small class="error" id="day-err-2">Must be a valid date</small>
+            <small class="error" id="empty-day">This field is required</small>
+          </div>
+
+         <div class="col">
+            <label class="title" for="month" id="lbl-month">MONTH</label>
+            <input type="datetime" name="month" placeholder="MM" id="month" oninput="handleInput(this)" required>
+            <small class="error" id="month-err">Must be a valid month</small>
+            <small class="error" id="empty-month">This field is required</small>
+
+          </div>
+
+          <div class="col">
+            <label class="title" for="year" id="lbl-year">YEAR</label>
+            <input type="datetime" name="year" placeholder="YYYY" id="year" oninput="handleInput(this)" required>
+            <small class="error" id="year-err">Must be a valid year</small>
+            <small class="error" id="empty-year">This field is required</small>
+
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="btn">
+          <button type="button">
+            <object type="image/svg+xml" data="assets/images/icon-arrow.svg">
+              Your browser does not support SVG
+            </object>
+          </button>
+       </div>
+      </form>  
+
+    </div>
+    <div class="out">
+      <p class="result"><span class="results" id="result1">--</span> years</p>
+      <p class="result"><span class="results" id="result2">--</span> months</p>
+      <p class="result"><span class="results" id="result3">--</span> days</p>
+      
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
