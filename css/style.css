@@ -164,6 +164,7 @@ button:hover {
     .container {
         width: 50%;
         padding: 1.7em;
+        border-bottom-right-radius: 10rem;
     }
     .btn {
         right: 5%;
